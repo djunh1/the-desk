@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 
 static/images/*
+
+#macOS
+.DS_Store
+.python-version
