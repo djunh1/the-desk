@@ -22,7 +22,7 @@ SECRET_KEY = config("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = str(os.environ.get("DJANGO_DEBUG")).lower() == "true"
 DEBUG = config("DJANGO_DEBUG", cast=bool)
-BASE_URL = config("BASE_URL", default=None)
+#BASE_URL = config("BASE_URL", default=None)
 
 ALLOWED_HOSTS = [
     ".railway.app"
@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tdesk.urls'
-print("base dir", BASE_DIR)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
